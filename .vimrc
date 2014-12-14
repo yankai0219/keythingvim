@@ -3,9 +3,40 @@
     filetype off                  " required
 " }
 
+" Vundle Plugin Manager {
+
+    " set the runtime path to include Vundle and initialize
+    set rtp+=~/.vim/bundle/Vundle.vim
+    " Keep Plugin commands between vundle#begin/end.
+    call vundle#begin()
+        
+        Plugin 'gmarik/Vundle.vim'               " let Vundle manage Vundle, required
+        Plugin 'tpope/vim-fugitive'
+        Plugin 'kien/ctrlp.vim'
+        Plugin 'scrooloose/nerdtree'
+        Plugin 'mbbill/undotree'
+        Plugin 'scrooloose/syntastic'
+        Plugin 'altercation/vim-colors-solarized'
+        Plugin 'ervandew/supertab'
+        Plugin 'jlanzarotta/bufexplorer'
+        Plugin 'shawncplus/phpcomplete.vim'
+        Plugin 'gcmt/wildfire.vim'
+        Plugin 'godlygeek/tabular'
+        Plugin 'bling/vim-airline'
+        Plugin 'vim-scripts/phpfolding.vim'     " get from www.vim.org
+        Plugin 'vim-scripts/project.tar.gz'
+        Plugin 'vim-scripts/PDV'
+        " Plugin 'majutsushi/tagbar' " vim 7.0.237 is lower than its require
+        " Plugin 'shougo/neocomplcache.vim' " need version no less than than 7.2
+        " Plugin 'Valloric/YouCompleteMe' " vim7.3 is needed
+    
+    call vundle#end()            " required  All of your Plugins must be added before the following line
+" }
+
+filetype plugin indent on    " required
 " General Setting {
 
-    syntax on
+    syntax on                
     set background=dark         " Assume a dark background
     set mouse=a                 " Automatically enable mouse usage
     set mousehide               " Hide the mouse cursor while typing
@@ -73,41 +104,6 @@
     " }
 
 " }
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
-Plugin 'kien/ctrlp.vim'
-" Plugin 'shougo/neocomplcache.vim' " need version no less than than 7.2
-Plugin 'scrooloose/nerdtree'
-Plugin 'mbbill/undotree'
-Plugin 'scrooloose/syntastic'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'ervandew/supertab'
-Plugin 'vim-scripts/phpfolding.vim'     " get from www.vim.org
-Plugin 'vim-scripts/project.tar.gz'
-Plugin 'vim-scripts/PDV'
-Plugin 'jlanzarotta/bufexplorer'
-Plugin 'shawncplus/phpcomplete.vim'
-" Plugin 'majutsushi/tagbar' " vim 7.0.237 is lower than its require
-Plugin 'gcmt/wildfire.vim'
-" Plugin 'Valloric/YouCompleteMe' " vim7.3 is needed
-Plugin 'godlygeek/tabular'
-Plugin 'bling/vim-airline'
-
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-
 
 " *** Plugin **** PHP-Folding {
     let php_folding = 1
