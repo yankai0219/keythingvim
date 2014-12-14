@@ -51,7 +51,7 @@ filetype plugin indent on    " required
     set tabstop=4
     set completeopt=menuone,longest,preview " Insert Completion
     set pumheight=6  " Keep a small completeion window
-    " set backspace=4  " Allow backspacing over autoindent, EOL, and BOL
+    set backspace=indent,eol,start  
     set autoindent              " always set autoindenting on
     set foldmethod=indent       " allow us to fold on indents
     set ls=2                    " allways show status line
