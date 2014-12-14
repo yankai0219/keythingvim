@@ -25,7 +25,7 @@
         Plugin 'bling/vim-airline'
         Plugin 'vim-scripts/phpfolding.vim'     " get from www.vim.org
         Plugin 'vim-scripts/project.tar.gz'
-        Plugin 'vim-scripts/PDV'
+        Plugin 'vim-scripts/nginx.vim'
         " Plugin 'majutsushi/tagbar' " vim 7.0.237 is lower than its require
         " Plugin 'shougo/neocomplcache.vim' " need version no less than than 7.2
         " Plugin 'Valloric/YouCompleteMe' " vim7.3 is needed
@@ -110,8 +110,8 @@ filetype plugin indent on    " required
 " }
 
 " *** Plugin NerdTree *** {
-    autocmd StdinReadPre * let s:std_in=1
-    autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+    autocmd StdinReadPre * let s:std_in=0
+    " autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif " open nerdtree when open vim
 " }
 
 " Set Fold of c and cpp {
@@ -135,7 +135,7 @@ filetype plugin indent on    " required
 
 " *** Plugin **** Vim UI {
      if filereadable(expand("~/.vim/bundle/vim-colors-solarized/colors/solarized.vim"))
-         " let g:solarized_termcolors=256
+         let g:solarized_termcolors=256
          let g:solarized_termtrans=1
          let g:solarized_contrast="normal"
          let g:solarized_visibility="normal"
