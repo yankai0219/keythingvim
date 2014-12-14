@@ -26,8 +26,8 @@ mkdir -p $HOME/.vim/bundle
 mkdir $HOME/.vim/backupdir
 mkdir $HOME/.vim/undodir
 
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-wget http://www.keything.net/wp-content/uploads/2014/12/vundlevimrc.txt -P $backdir
-mv $backdir/vundlevimrc.txt $HOME/.vim/.vimrc
+mv `dirname $0`/.vimrc $HOME/.vimrc
 ln -s $HOME/.vim/.vimrc $HOME/.vimrc
+
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
