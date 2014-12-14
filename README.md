@@ -10,5 +10,5 @@ Desc:
         # Now you complete this setup
     TODO
 
-        # 1. whether check version of vim
-        # 2. add neocmplcache,YouCompleteMe configure in .vimrc
+        # 1. Whether check version of vim
+        # 2. Add neocmplcache,YouCompleteMe configure in .vimrc
