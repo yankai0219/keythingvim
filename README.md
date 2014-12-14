@@ -8,3 +8,7 @@ Desc:
         # Step3: execute its automatically_build.sh
             $ sh automatically_build.sh
         # Now you complete this setup
+    TODO
+
+        # 1. whether check version of vim
+        # 2. add neocmplcache,YouCompleteMe configure in .vimrc
